@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Step 3</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="modal-container">
+        <header class="modal-header">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo">
+                <span>COMPANY NAME</span>
+            </div>
+            <button class="close-btn">&times;</button>
+        </header>
+        <main class="modal-body">
+            <div class="progress-steps">
+                <span class="step active"></span>
+                <span class="step active"></span>
+                <span class="step active"></span>
+            </div>
+
+            <h1>Registration</h1>
+            <p class="description">Fill in the registration data. It will take a couple of minutes. All you need is a phone number and e-mail.</p>
+
+            <form>
+                <div class="form-group-box">
+                    <span>+1 555 555-1234</span>
+                    <small class="helper-text-success">✓ Number confirmed</small>
+                </div>
+
+                <div class="form-group-box">
+                    <label for="email">Enter your email</label>
+                    <input type="email" id="email" value="alex_manager@gmail.com">
+                </div>
+
+                <div class="form-group-box">
+                    <label for="password">Set a password</label>
+                    <input type="password" id="password" value="************">
+                    <button type="button" class="password-toggle">👁</button>
+                    <small class="helper-text-success">✓ Good password</small>
+                </div>
+
+                <footer class="modal-footer">
+                    <button type="submit" class="btn-register">Register Now</button>
+                </footer>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

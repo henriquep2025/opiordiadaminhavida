@@ -1,0 +1,182 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.modal-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.logo img {
+    height: 30px; 
+    width: auto;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0 40px 40px 40px;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.step {
+    width: 20px;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.step.active {
+    background-color: #007bff;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group-box label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group-box input[type="email"],
+.form-group-box input[type="password"] {
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form-group-box input:focus {
+    outline: none;
+}
+
+.helper-text-success {
+    font-size: 12px;
+    color: #28a745;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 15px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.modal-footer {
+    margin-top: 30px;
+}
+
+.btn-register {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .modal-container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+
+    .modal-header {
+        padding: 15px;
+    }
+
+    .modal-body {
+        padding: 0 15px 15px 15px;
+    }
+
+    .progress-steps {
+        margin: 20px 0;
+    }
+
+    h1,
+    .description {
+        text-align: left;
+    }
+}
