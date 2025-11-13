@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <div class="modal-container">
+        <header class="modal-header">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo">
+                <span>COMPANY NAME</span>
+            </div>
+            <button class="close-btn">&times;</button>
+        </header>
+        <main class="modal-body">
+            <div class="progress-steps">
+                <span class="step active"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+
+            <h1>Profile info</h1>
+            <p class="description">Fill in the data for profile. It will take a couple of minutes. You only need a passport.</p>
+
+            <div class="form-group-agree">
+                <input type="checkbox" id="agree" checked>
+                <label for="agree">I agree with <a href="#">Terms of use</a></label>
+            </div>
+
+            <form>
+                <section class="form-section">
+                    <h2>Personal data</h2>
+                    <p class="subtitle">Specify exactly as in your passport</p>
+
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" value="Alexander">
+                    </div>
+                    <div class="form-group">
+                        <label for="second-name">Second name</label>
+                        <input type="text" id="second-name" value="Smith">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="text" id="dob" value="12.05.1992">
+                        </div>
+                        <div class="form-group">
+                            <label for="pob">Place of Birth</label>
+                            <select id="pob">
+                                <option selected>New York, USA</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="itn-box">
+                    <div class="form-group">
+                        <input type="text" id="itn" value="123-45-678">
+                        <small class="helper-text">✓ Your ITN</small>
+                    </div>
+                </div>
+
+                <footer class="modal-footer">
+                    <a href="index5.html" class="btn-next">Go Next →</a>
+                </footer>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
