@@ -175,6 +175,7 @@
 
 .btn-register {
     width: 100%;
+    display: block;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -183,6 +184,8 @@
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s;
+    text-align: center;
+    list-style: none;
 }
 
 .btn-register:hover {
